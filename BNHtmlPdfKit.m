@@ -363,7 +363,7 @@
 	self.webView.delegate = self;
 
 	if (!self.baseUrl) {
-		[self.webView loadHTMLString:html baseURL:[NSURL URLWithString:@"http://localhost"]];
+		[self.webView loadHTMLString:html baseURL:nil];
 	} else {
 		[self.webView loadHTMLString:html baseURL:self.baseUrl];
 	}
